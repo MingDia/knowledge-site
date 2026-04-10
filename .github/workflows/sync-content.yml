@@ -13,7 +13,8 @@ steps:
   - name: Checkout target repo
     uses: actions/checkout@v4
     with:
-      persist-credentials: false   # ❗必须关掉，避免污染认证
+      token: ${{ secrets.CONTENT_REPO_PAT }}
+      ref: main
 
   - name: Checkout content repo
     uses: actions/checkout@v4
