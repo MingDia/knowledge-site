@@ -2,6 +2,9 @@
   "career": {
     "title": "Career"
   },
+  "index": {
+    "title": "知识库"
+  },
   "tutorials": {
     "title": "Tutorials"
   }

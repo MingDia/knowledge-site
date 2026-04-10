@@ -25,9 +25,17 @@ jobs:
 
       - name: Sync content files to pages
         run: |
-          rm -rf pages/docs
           mkdir -p pages/docs
-          cp -r external-content/content/docs/* pages/docs/
+          for item in external-content/content/docs/*; do
+            basename=$(basename "$item")
+            if [ "$basename" != "index.mdx" ]; then
+              rm -rf "pages/docs/$basename"
+              cp -r "$item" "pages/docs/$basename"
+            fi
+          done
+
+      - name: Normalize files (md -> mdx)
+        run: node scripts/normalize-files.js
 
       - name: Generate _meta.json
         run: node scripts/generate-meta.js
