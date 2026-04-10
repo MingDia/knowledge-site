@@ -23,11 +23,11 @@ jobs:
           token: ${{ secrets.CONTENT_REPO_PAT }}
           path: external-content
 
-      - name: Sync content files
+      - name: Sync content files to pages
         run: |
-          rm -rf content
-          mkdir -p content
-          cp -r external-content/content/* content/
+          rm -rf pages/docs
+          mkdir -p pages/docs
+          cp -r external-content/content/* pages/docs/
 
       - name: Sync public assets
         run: |
@@ -40,7 +40,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          git add content public/images
+          git add pages/docs public/images
 
           if git diff --cached --quiet; then
             echo "No changes"
