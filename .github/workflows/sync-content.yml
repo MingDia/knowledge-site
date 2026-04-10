@@ -1,53 +1,54 @@
 name: Sync Content from knowledge-content
 
 on:
-  repository_dispatch:
-    types: [content_updated]
-  workflow_dispatch:
+repository_dispatch:
+types: [content_updated]
+workflow_dispatch:
 
 jobs:
-  sync-content:
-    runs-on: ubuntu-latest
+sync-content:
+runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout site repo
-        uses: actions/checkout@v4
-        with:
-          persist-credentials: false 
+steps:
+  - name: Checkout target repo
+    uses: actions/checkout@v4
+    with:
+      persist-credentials: false   # ❗必须关掉，避免污染认证
 
-      - name: Checkout content repo
-        uses: actions/checkout@v4
-        with:
-          repository: MingDia/knowledge-content
-          token: ${{ secrets.CONTENT_REPO_PAT }}
-          path: external-content
+  - name: Checkout content repo
+    uses: actions/checkout@v4
+    with:
+      repository: MingDia/knowledge-content
+      token: ${{ secrets.CONTENT_REPO_PAT }}
+      path: external-content
 
-      - name: Sync content files
-        run: |
-          rm -rf content
-          mkdir -p content
-          cp -r external-content/content/* content/
+  - name: Sync content files
+    run: |
+      rm -rf content
+      mkdir -p content
+      cp -r external-content/content/* content/
 
-      - name: Sync public assets
-        run: |
-          rm -rf public/images
-          mkdir -p public/images
-          cp -r external-content/public/images/* public/images/ 2>/dev/null || true
+  - name: Sync public assets
+    run: |
+      rm -rf public/images
+      mkdir -p public/images
+      cp -r external-content/public/images/* public/images/ 2>/dev/null || true
 
-      - name: Commit
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add content public/images
+  - name: Commit changes
+    run: |
+      git config user.name "github-actions"
+      git config user.email "actions@github.com"
 
-          if git diff --cached --quiet; then
-            echo "No changes"
-            exit 0
-          fi
+      git add content public/images
 
-          git commit -m "chore: sync content from knowledge-content"
+      if git diff --cached --quiet; then
+        echo "No changes"
+        exit 0
+      fi
 
-      - name: Push with PAT
-        run: |
-          git remote set-url origin https://x-access-token:${{ secrets.CONTENT_REPO_PAT }}@github.com/YOUR_USERNAME/YOUR_REPO.git
-          git push
+      git commit -m "chore: sync content from knowledge-content"
+
+  - name: Push to target repo with PAT
+    run: |
+      git remote set-url origin https://x-access-token:${{ secrets.CONTENT_REPO_PAT }}@github.com/MingDia/knowledge-content.git
+      git push origin HEAD:main
