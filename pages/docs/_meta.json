@@ -1,5 +1,8 @@
 {
-  "index": {
-    "title": "知识库首页"
+  "career": {
+    "title": "Career"
+  },
+  "tutorials": {
+    "title": "Tutorials"
   }
 }
