@@ -1,7 +1,7 @@
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>我的知识网站</span>,
+  logo: '我的知识网站',
   project: {
     link: 'https://github.com/MingDia/knowledge-site',
   },
