@@ -8,10 +8,12 @@ on:
 jobs:
   sync-content:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout site repo
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: false
 
       - name: Checkout content repo
         uses: actions/checkout@v4
@@ -19,6 +21,7 @@ jobs:
           repository: MingDia/knowledge-content
           token: ${{ secrets.CONTENT_REPO_PAT }}
           path: external-content
+          persist-credentials: false
 
       - name: Sync content files
         run: |
