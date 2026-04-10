@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Buttons 插件使用教程",
+    "description": "Obsidian Buttons 插件完整使用指南，包含命令按钮、链接按钮、模板按钮、行内按钮、Templater 集成等高级功能。",
+    "path": "content\\docs\\tutorials\\Obsidian技巧\\Buttons插件使用教程",
+    "date": "2026-04-09T00:00:00.000Z"
+  },
+  {
+    "title": "Dataview Task 使用说明",
+    "description": "Obsidian中Tasks插件使用Dataview格式标记任务属性的完整指南，包含优先级、日期、重复任务等语法说明。",
+    "path": "content\\docs\\tutorials\\Obsidian技巧\\dataview task 使用说明",
+    "date": "2026-04-08T00:00:00.000Z"
+  },
+  {
+    "title": "PARA自动整理工作流",
+    "path": "content\\docs\\tutorials\\知识管理\\PARA整理工作流",
+    "date": "2026-04-02T00:00:00.000Z"
+  },
+  {
+    "title": "Obsidian个人主页看板搭建指南",
+    "description": "Obsidian个人主页搭建思路与实用模块组合分享，包含知识库模板和精选灵感案例，帮助打造高效数字工作台。",
+    "path": "content\\docs\\tutorials\\Obsidian技巧\\Obsidian个人主页看板搭建指南"
+  },
+  {
+    "title": "Obsidian复杂任务管理模板指南",
+    "description": "分享Obsidian中管理长期复杂任务的方法，包含完整的任务管理模板设计，解决信息碎片化、进度不可见、过程不可追溯三大痛点。",
+    "path": "content\\docs\\tutorials\\Obsidian技巧\\Obsidian复杂任务管理模板指南"
+  },
+  {
+    "title": "TRAE 6A工作流配置实践指南",
+    "description": "TRAE AI开发工具的6A工作流配置指南，包含需求对齐、架构设计、任务拆分、审批、执行、评估六个阶段的完整流程规范。",
+    "path": "content\\docs\\tutorials\\Obsidian技巧\\TRAE 6A工作流配置实践指南"
+  },
+  {
+    "title": "PARA分类方法学习指南",
+    "description": "本文介绍PARA分类体系的核心思想，以及如何结合个人成长路径使用PARA进行知识管理。",
+    "path": "content\\docs\\tutorials\\知识管理\\PARA分类方法学习指南"
+  },
+  {
+    "title": "卡片盒系统",
+    "description": "基于卢曼卡片盒笔记法的个人知识管理系统，包含PARA分类和双链知识关联。",
+    "path": "content\\docs\\tutorials\\知识管理\\卡片盒系统"
+  },
+  {
+    "title": "算法刷题科学方法指南（灵茶山艾府）",
+    "description": "力扣大神灵茶山艾府分享的科学刷题方法，包含专题训练、随机训练、突击训练三种模式，以及完整的算法题单推荐。",
+    "path": "content\\docs\\tutorials\\算法学习\\算法刷题科学方法指南（灵茶山艾府）"
+  },
+  {
+    "title": "普通人编程入门实用指南",
+    "description": "分享普通人学习编程的实用方法，解决入门难的痛点，包含术语学习、环境搭建、编程语言选择等常见问题的解答。",
+    "path": "content\\docs\\tutorials\\编程入门\\普通人编程入门实用指南"
+  },
+  {
+    "title": "程序员海外工作/英文面试手册",
+    "description": "程序员海外求职和英文面试的完整资源手册，包含职位搜索、简历优化、面试准备、薪资谈判等全流程指南。",
+    "path": "content\\docs\\career\\程序员海外工作or英文面试手册"
+  },
+  {
+    "title": "程序员职业能力提升32条实用建议",
+    "description": "分享32条程序员提升职业能力的实用建议，涵盖编码习惯、技术能力、工作方法、职业发展等多个方面，帮助程序员突破薪资瓶颈。",
+    "path": "content\\docs\\career\\程序员职业能力提升32条实用建议"
+  }
+]

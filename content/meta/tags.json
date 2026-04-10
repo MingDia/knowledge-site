@@ -1,0 +1,110 @@
+{
+  "Obsidian": [
+    "content\\docs\\tutorials\\Obsidian技巧\\Buttons插件使用教程.md",
+    "content\\docs\\tutorials\\Obsidian技巧\\dataview task 使用说明.md",
+    "content\\docs\\tutorials\\Obsidian技巧\\Obsidian个人主页看板搭建指南.md",
+    "content\\docs\\tutorials\\Obsidian技巧\\Obsidian复杂任务管理模板指南.md"
+  ],
+  "插件": [
+    "content\\docs\\tutorials\\Obsidian技巧\\Buttons插件使用教程.md"
+  ],
+  "教程": [
+    "content\\docs\\tutorials\\Obsidian技巧\\Buttons插件使用教程.md"
+  ],
+  "插件/Dataview": [
+    "content\\docs\\tutorials\\Obsidian技巧\\dataview task 使用说明.md"
+  ],
+  "插件/Tasks": [
+    "content\\docs\\tutorials\\Obsidian技巧\\dataview task 使用说明.md"
+  ],
+  "任务管理": [
+    "content\\docs\\tutorials\\Obsidian技巧\\dataview task 使用说明.md",
+    "content\\docs\\tutorials\\Obsidian技巧\\Obsidian复杂任务管理模板指南.md"
+  ],
+  "clippings": [
+    "content\\docs\\tutorials\\Obsidian技巧\\Obsidian个人主页看板搭建指南.md",
+    "content\\docs\\tutorials\\Obsidian技巧\\Obsidian复杂任务管理模板指南.md",
+    "content\\docs\\tutorials\\知识管理\\PARA分类方法学习指南.md",
+    "content\\docs\\tutorials\\算法学习\\算法刷题科学方法指南（灵茶山艾府）.md",
+    "content\\docs\\tutorials\\编程入门\\普通人编程入门实用指南.md",
+    "content\\docs\\career\\程序员职业能力提升32条实用建议.md"
+  ],
+  "resource": [
+    "content\\docs\\tutorials\\Obsidian技巧\\Obsidian个人主页看板搭建指南.md",
+    "content\\docs\\tutorials\\Obsidian技巧\\Obsidian复杂任务管理模板指南.md",
+    "content\\docs\\tutorials\\Obsidian技巧\\TRAE 6A工作流配置实践指南.md",
+    "content\\docs\\tutorials\\知识管理\\PARA分类方法学习指南.md",
+    "content\\docs\\tutorials\\算法学习\\算法刷题科学方法指南（灵茶山艾府）.md",
+    "content\\docs\\tutorials\\编程入门\\普通人编程入门实用指南.md",
+    "content\\docs\\career\\程序员海外工作or英文面试手册.md",
+    "content\\docs\\career\\程序员职业能力提升32条实用建议.md"
+  ],
+  "知识库": [
+    "content\\docs\\tutorials\\Obsidian技巧\\Obsidian个人主页看板搭建指南.md"
+  ],
+  "效率工具": [
+    "content\\docs\\tutorials\\Obsidian技巧\\Obsidian个人主页看板搭建指南.md",
+    "content\\docs\\tutorials\\Obsidian技巧\\Obsidian复杂任务管理模板指南.md"
+  ],
+  "TRAE": [
+    "content\\docs\\tutorials\\Obsidian技巧\\TRAE 6A工作流配置实践指南.md"
+  ],
+  "AI开发": [
+    "content\\docs\\tutorials\\Obsidian技巧\\TRAE 6A工作流配置实践指南.md"
+  ],
+  "项目管理": [
+    "content\\docs\\tutorials\\Obsidian技巧\\TRAE 6A工作流配置实践指南.md"
+  ],
+  "工作流": [
+    "content\\docs\\tutorials\\Obsidian技巧\\TRAE 6A工作流配置实践指南.md",
+    "content\\docs\\tutorials\\知识管理\\PARA整理工作流.md"
+  ],
+  "PARA": [
+    "content\\docs\\tutorials\\知识管理\\PARA分类方法学习指南.md",
+    "content\\docs\\tutorials\\知识管理\\PARA整理工作流.md"
+  ],
+  "知识管理": [
+    "content\\docs\\tutorials\\知识管理\\PARA分类方法学习指南.md",
+    "content\\docs\\tutorials\\知识管理\\卡片盒系统.md"
+  ],
+  "整理": [
+    "content\\docs\\tutorials\\知识管理\\PARA整理工作流.md"
+  ],
+  "Zettelkasten": [
+    "content\\docs\\tutorials\\知识管理\\卡片盒系统.md"
+  ],
+  "算法": [
+    "content\\docs\\tutorials\\算法学习\\算法刷题科学方法指南（灵茶山艾府）.md"
+  ],
+  "刷题": [
+    "content\\docs\\tutorials\\算法学习\\算法刷题科学方法指南（灵茶山艾府）.md"
+  ],
+  "LeetCode": [
+    "content\\docs\\tutorials\\算法学习\\算法刷题科学方法指南（灵茶山艾府）.md"
+  ],
+  "编程": [
+    "content\\docs\\tutorials\\编程入门\\普通人编程入门实用指南.md"
+  ],
+  "学习方法": [
+    "content\\docs\\tutorials\\编程入门\\普通人编程入门实用指南.md"
+  ],
+  "程序员": [
+    "content\\docs\\career\\程序员海外工作or英文面试手册.md",
+    "content\\docs\\career\\程序员职业能力提升32条实用建议.md"
+  ],
+  "海外求职": [
+    "content\\docs\\career\\程序员海外工作or英文面试手册.md"
+  ],
+  "面试": [
+    "content\\docs\\career\\程序员海外工作or英文面试手册.md"
+  ],
+  "英文": [
+    "content\\docs\\career\\程序员海外工作or英文面试手册.md"
+  ],
+  "职业发展": [
+    "content\\docs\\career\\程序员职业能力提升32条实用建议.md"
+  ],
+  "编程技能": [
+    "content\\docs\\career\\程序员职业能力提升32条实用建议.md"
+  ]
+}
