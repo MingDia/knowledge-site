@@ -50,5 +50,5 @@ steps:
 
   - name: Push to target repo with PAT
     run: |
-      git remote set-url origin https://x-access-token:${{ secrets.CONTENT_REPO_PAT }}@github.com/MingDia/knowledge-content.git
+      git remote set-url origin https://x-access-token:${{ secrets.CONTENT_REPO_PAT }}@github.com/MingDia/knowledge-site.git
       git push origin HEAD:main
