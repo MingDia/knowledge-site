@@ -1,0 +1,44 @@
+name: Sync Content from knowledge-content
+
+on:
+  repository_dispatch:
+    types: [content_updated]
+  workflow_dispatch:
+
+jobs:
+  sync-content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+
+      - name: Checkout content repo
+        uses: actions/checkout@v4
+        with:
+          repository: MingDia/knowledge-content
+          token: ${{ secrets.CONTENT_REPO_PAT }}
+          path: external-content
+
+      - name: Sync content files
+        run: |
+          rm -rf content
+          mkdir -p content
+          cp -r external-content/content/* content/
+
+      - name: Sync public assets
+        run: |
+          mkdir -p public
+          rm -rf public/images
+          mkdir -p public/images
+          cp -r external-content/public/images/* public/images/ 2>/dev/null || true
+
+      - name: Commit synced content
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add content public/images
+          git diff --cached --quiet || git commit -m "chore: sync content from knowledge-content"
+
+      - name: Push changes
+        run: git push
